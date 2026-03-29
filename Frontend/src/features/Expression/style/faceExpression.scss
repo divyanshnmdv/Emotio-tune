@@ -1,0 +1,45 @@
+
+
+.video-div {
+  text-align: center;
+  padding: 1rem;
+
+  video {
+    width: 100%;
+    max-width: 400px; // responsive, prevents page scroll
+    border-radius: 12px;
+    border: 2px solid var(--primary-purple);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
+    margin-bottom: 1rem; // spacing below video
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem; // spacing above and below
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .button {
+    margin-top: 0.5rem; // ensures gap between h2 and button
+    background: linear-gradient(90deg, var(--primary-red), var(--primary-purple));
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.7rem 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 12px var(--accent-pink);
+      transform: translateY(-2px);
+    }
+
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+}
