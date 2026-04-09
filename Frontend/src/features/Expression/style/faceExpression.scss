@@ -1,29 +1,26 @@
-
-
 .video-div {
   text-align: center;
   padding: 1rem;
 
   video {
     width: 100%;
-    max-width: 400px; // responsive, prevents page scroll
+    max-width: 400px;
     border-radius: 12px;
     border: 2px solid var(--primary-purple);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.6);
-    margin-bottom: 1rem; // spacing below video
+    margin-bottom: 1rem;
   }
 
   h2 {
     font-size: 1.2rem;
     font-weight: 600;
-    margin: 0.5rem 0 1rem; // spacing above and below
+    margin: 0.5rem 0 1rem;
     background: linear-gradient(90deg, var(--primary-red), var(--primary-purple));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
   .button {
-    margin-top: 0.5rem; // ensures gap between h2 and button
     background: linear-gradient(90deg, var(--primary-red), var(--primary-purple));
     color: #fff;
     border: none;
@@ -32,6 +29,7 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    margin: 0.5rem;
 
     &:hover {
       box-shadow: 0 0 12px var(--accent-pink);
@@ -41,5 +39,14 @@
     &:active {
       transform: scale(0.97);
     }
+  }
+
+  // Flex layout for multiple buttons side by side
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
   }
 }

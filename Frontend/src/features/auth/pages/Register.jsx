@@ -32,7 +32,7 @@ const Register = () => {
                     <FormGroup
                         value={username}
                         onChange={(e) => setUsername(e.target.value)}
-                        label="Name" placeholder="Enter your name" />
+                        label="Username" placeholder="Enter Username" />
                     <FormGroup
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
