@@ -9,6 +9,7 @@ function App() {
   return (
     <AuthProvider>
       <SongContextProvider>
+        
         <RouterProvider router={router} />
       </SongContextProvider>
     </AuthProvider>
